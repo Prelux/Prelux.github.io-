@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prelux Digital Marketing — Social Media, Handled Properly</title>
+<meta name="description" content="Prelux Digital Marketing runs social media ads for small businesses — a clear monthly package or a one-time batch, honest terms, and no promises about results we can't control.">
+<meta property="og:title" content="Prelux Digital Marketing">
+<meta property="og:description" content="Social media ads for small businesses — a clear monthly package or a one-time batch, with honest, readable terms.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9C%A8</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15171f;
+    --ink-2:#1d2029;
+    --ink-3:#262a36;
+    --porcelain:#f6f2ea;
+    --gold:#d6a64a;
+    --gold-soft:#e9c98a;
+    --violet:#7b71c9;
+    --ash:#9a9dab;
+    --ash-dark:#565a68;
+    --text-on-ink:#eeece6;
+    --text-on-porcelain:#1b1d24;
+    --line-on-ink:rgba(238,236,230,0.14);
+    --line-on-porcelain:rgba(27,29,36,0.12);
+    --max:1180px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    background:var(--ink);
+    color:var(--text-on-ink);
+    font-family:'Inter', -apple-system, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.serif{ font-family:'Fraunces', Georgia, serif; font-weight:500; letter-spacing:-0.01em; }
+
+  a{ color:inherit; }
+  img{ max-width:100%; display:block; }
+
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 32px; }
+
+  ::selection{ background:var(--gold); color:var(--ink); }
+
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(21,23,31,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-on-ink);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 32px;
+    max-width:var(--max); margin:0 auto;
+  }
+  .wordmark{
+    font-family:'Fraunces', serif; font-weight:500; font-size:22px;
+    letter-spacing:-0.01em;
+    display:flex; align-items:baseline; gap:8px;
+    text-decoration:none;
+  }
+  .wordmark em{ font-style:italic; color:var(--gold); font-weight:400; }
+  nav.links{ display:flex; align-items:center; gap:34px; }
+  nav.links a{
+    font-size:14.5px; color:var(--ash); text-decoration:none;
+    transition:color .18s ease;
+  }
+  nav.links a:hover{ color:var(--text-on-ink); }
+  .nav-cta{
+    background:var(--gold); color:var(--ink); font-weight:600; font-size:14px;
+    padding:10px 20px; border-radius:3px; text-decoration:none;
+    transition:background .18s ease, transform .18s ease;
+  }
+  .nav-cta:hover{ background:var(--gold-soft); transform:translateY(-1px); }
+  .menu-btn{ display:none; background:none; border:1px solid var(--line-on-ink); color:var(--text-on-ink); width:40px; height:40px; border-radius:3px; cursor:pointer; font-size:18px; }
+
+  @media (max-width:860px){
+    nav.links{ position:fixed; top:73px; left:0; right:0; background:var(--ink-2); flex-direction:column; align-items:flex-start; gap:0; padding:0; max-height:0; overflow:hidden; transition:max-height .25s ease; border-bottom:1px solid var(--line-on-ink); }
+    nav.links.open{ max-height:320px; }
+    nav.links a, nav.links .nav-cta{ width:100%; padding:16px 32px; border-bottom:1px solid var(--line-on-ink); border-radius:0; text-align:left; }
+    .menu-btn{ display:block; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:100px 0 90px;
+    border-bottom:1px solid var(--line-on-ink);
+  }
+  .hero .wrap{
+    display:grid; grid-template-columns:1.15fr 0.85fr; gap:64px; align-items:center;
+  }
+  .hero-eyebrow{
+    font-size:14.5px; color:var(--ash); margin-bottom:22px;
+    max-width:34ch;
+  }
+  .hero h1{
+    font-size:clamp(38px, 5vw, 62px);
+    line-height:1.06;
+    margin-bottom:26px;
+  }
+  .hero h1 .accent{ font-style:italic; color:var(--gold-soft); }
+  .hero-line{ display:block; opacity:0; transform:translateY(16px); animation:riseIn .7s ease forwards; }
+  .hero-line:nth-child(1){ animation-delay:.05s; }
+  .hero-line:nth-child(2){ animation-delay:.2s; }
+  .hero-line:nth-child(3){ animation-delay:.35s; }
+  @keyframes riseIn{ to{ opacity:1; transform:translateY(0); } }
+
+  .hero p.lede{
+    font-size:17.5px; color:var(--ash); max-width:46ch; margin-bottom:34px;
+  }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; align-items:center; }
+  .btn-primary{
+    background:var(--gold); color:var(--ink); font-weight:600; font-size:15px;
+    padding:14px 26px; border-radius:3px; text-decoration:none; display:inline-block;
+    transition:background .18s ease, transform .18s ease;
+  }
+  .btn-primary:hover{ background:var(--gold-soft); transform:translateY(-1px); }
+  .btn-ghost{
+    color:var(--text-on-ink); font-size:15px; text-decoration:none;
+    border-bottom:1px solid var(--line-on-ink); padding-bottom:2px;
+  }
+  .btn-ghost:hover{ border-color:var(--text-on-ink); }
+
+  /* calendar mockup */
+  .calendar-card{
+    background:var(--ink-2); border:1px solid var(--line-on-ink); border-radius:6px;
+    padding:26px 26px 22px;
+  }
+  .calendar-card .cc-head{
+    display:flex; justify-content:space-between; align-items:baseline;
+    margin-bottom:18px; padding-bottom:16px; border-bottom:1px solid var(--line-on-ink);
+  }
+  .calendar-card .cc-head .cc-title{ font-family:'Fraunces',serif; font-size:17px; }
+  .calendar-card .cc-head .cc-sub{ font-size:12.5px; color:var(--ash-dark); }
+  .cc-grid{ display:grid; grid-template-columns:repeat(7,1fr); gap:7px; }
+  .cc-cell{
+    aspect-ratio:1; border-radius:3px; background:var(--ink-3);
+    position:relative;
+  }
+  .cc-cell.post{ background:var(--ink-3); }
+  .cc-cell.post::after{
+    content:''; position:absolute; inset:0; margin:auto; width:7px; height:7px;
+    border-radius:50%; background:var(--gold); opacity:0; top:calc(50% - 3.5px);
+    animation:dotPop .4s ease forwards;
+  }
+  .cc-cell.post2::after{ background:var(--violet); }
+  .cc-cell.post:nth-of-type(1)::after{ animation-delay:.9s; }
+  @keyframes dotPop{ from{ opacity:0; transform:scale(0);} to{ opacity:1; transform:scale(1);} }
+  .cc-foot{ display:flex; gap:18px; margin-top:20px; font-size:12.5px; color:var(--ash-dark); }
+  .cc-foot span{ display:flex; align-items:center; gap:6px; }
+  .cc-dot{ width:7px; height:7px; border-radius:50%; display:inline-block; }
+  .cc-caption{ margin-top:18px; padding-top:16px; border-top:1px solid var(--line-on-ink); font-size:12.5px; color:var(--ash-dark); line-height:1.5; }
+
+  @media (max-width:860px){
+    .hero .wrap{ grid-template-columns:1fr; }
+    .hero{ padding:56px 0 60px; }
+  }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{ padding:96px 0; }
+  section.on-porcelain{ background:var(--porcelain); color:var(--text-on-porcelain); }
+  .section-head{ max-width:640px; margin-bottom:56px; }
+  .section-kicker{ font-size:14px; color:var(--gold); font-weight:500; margin-bottom:14px; }
+  .on-porcelain .section-kicker{ color:#a97d1e; }
+  section h2{ font-size:clamp(28px,3.4vw,40px); line-height:1.14; margin-bottom:16px; }
+  .section-head p{ color:var(--ash); font-size:16.5px; max-width:52ch; }
+  .on-porcelain .section-head p{ color:#565a63; }
+
+  /* ---------- INCLUDED ---------- */
+  .included-panel{
+    display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border:1px solid var(--line-on-porcelain); border-radius:6px; overflow:hidden;
+    background:#fff;
+  }
+  .included-list{ padding:44px 44px; }
+  .included-list ul{ list-style:none; }
+  .included-list li{
+    display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--line-on-porcelain);
+  }
+  .included-list li:last-child{ border-bottom:none; }
+  .included-list li .num{
+    font-family:'Fraunces',serif; font-style:italic; font-size:20px; color:#a97d1e; width:34px; flex-shrink:0;
+  }
+  .included-list li .desc b{ display:block; font-weight:600; margin-bottom:2px; }
+  .included-list li .desc span{ color:#5c606a; font-size:14.5px; }
+
+  .included-stats{
+    background:var(--ink); color:var(--text-on-ink);
+    padding:44px 40px; display:flex; flex-direction:column; justify-content:center; gap:30px;
+  }
+  .stat-row{ display:flex; align-items:baseline; gap:16px; border-bottom:1px solid var(--line-on-ink); padding-bottom:24px; }
+  .stat-row:last-child{ border-bottom:none; padding-bottom:0; }
+  .stat-row .big{ font-family:'Fraunces',serif; font-size:48px; line-height:1; color:var(--gold-soft); }
+  .stat-row .lbl{ font-size:14.5px; color:var(--ash); max-width:22ch; }
+
+  @media (max-width:860px){
+    .included-panel{ grid-template-columns:1fr; }
+    .included-list{ padding:32px 26px; }
+    .included-stats{ padding:32px 26px; }
+  }
+
+  /* ---------- PROCESS (timeline) ---------- */
+  .timeline{ position:relative; padding-left:0; }
+  .timeline-track{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:28px; position:relative;
+  }
+  .timeline-track::before{
+    content:''; position:absolute; top:11px; left:0; right:0; height:1px; background:var(--line-on-ink);
+  }
+  .t-step{ position:relative; padding-top:38px; }
+  .t-step::before{
+    content:''; position:absolute; top:0; left:0; width:11px; height:11px; border-radius:50%;
+    background:var(--ink); border:2px solid var(--gold);
+  }
+  .t-step h3{ font-size:19px; margin-bottom:10px; }
+  .t-step p{ color:var(--ash); font-size:14.5px; max-width:26ch; }
+
+  @media (max-width:860px){
+    .timeline-track{ grid-template-columns:1fr; gap:34px; }
+    .timeline-track::before{ display:none; }
+    .t-step{ padding-left:28px; padding-top:0; }
+    .t-step::before{ top:6px; }
+  }
+
+  /* ---------- HONESTY ---------- */
+  .honesty{ background:var(--ink-2); border-top:1px solid var(--line-on-ink); border-bottom:1px solid var(--line-on-ink); }
+  .honesty .wrap{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:60px; align-items:start; }
+  .honesty blockquote{
+    font-family:'Fraunces',serif; font-style:italic; font-size:clamp(24px,2.6vw,32px);
+    line-height:1.3; color:var(--text-on-ink); border-left:2px solid var(--gold); padding-left:28px;
+  }
+  .honesty-list{ display:flex; flex-direction:column; gap:22px; }
+  .honesty-list .h-item{ border-bottom:1px solid var(--line-on-ink); padding-bottom:22px; }
+  .honesty-list .h-item:last-child{ border-bottom:none; }
+  .honesty-list .h-item h4{ font-size:16px; font-weight:600; margin-bottom:6px; }
+  .honesty-list .h-item p{ color:var(--ash); font-size:14.5px; }
+
+  @media (max-width:860px){ .honesty .wrap{ grid-template-columns:1fr; gap:36px; } }
+
+  /* ---------- PRICING ---------- */
+  .price-panel{
+    background:#fff; border:1px solid var(--line-on-porcelain); border-radius:6px;
+    display:grid; grid-template-columns:1.3fr 1fr;
+  }
+  .price-left{ padding:48px; border-right:1px solid var(--line-on-porcelain); }
+  .price-left h3{ font-size:22px; margin-bottom:14px; }
+  .price-left p{ color:#5c606a; font-size:15px; margin-bottom:22px; max-width:44ch; }
+  .price-left ul{ list-style:none; display:flex; flex-direction:column; gap:10px; }
+  .price-left li{ font-size:14.5px; color:#3a3d45; padding-left:20px; position:relative; }
+  .price-left li::before{ content:'—'; position:absolute; left:0; color:#a97d1e; }
+  .price-right{ padding:48px; display:flex; flex-direction:column; justify-content:center; }
+  .price-tag{ display:flex; align-items:baseline; gap:6px; margin-bottom:6px; }
+  .price-tag .amt{ font-family:'Fraunces',serif; font-size:56px; }
+  .price-tag .was{ font-family:'Fraunces',serif; font-size:24px; color:#9a9dab; text-decoration:line-through; text-decoration-color:#b7828a; }
+  .price-tag .per{ color:#5c606a; font-size:15px; }
+  .save-badge{
+    display:inline-block; font-size:12.5px; font-weight:600; color:#5b4fae;
+    background:rgba(91,79,174,0.12); padding:4px 11px; border-radius:20px; margin-bottom:16px;
+  }
+  .price-fine{ font-size:13px; color:#7a7e87; margin-bottom:26px; line-height:1.6; }
+  .price-right .btn-primary{ text-align:center; }
+
+  .pricing-divider{
+    display:flex; align-items:center; gap:18px; margin:36px 0;
+    color:var(--ash-dark); font-family:'Fraunces',serif; font-style:italic; font-size:17px;
+  }
+  .pricing-divider::before, .pricing-divider::after{ content:''; flex:1; height:1px; background:var(--line-on-porcelain); }
+
+  .price-panel--alt .price-left{ order:2; border-right:none; border-left:1px solid var(--line-on-porcelain); }
+  .price-panel--alt .price-right{ order:1; }
+  .price-panel--alt .price-left li::before{ color:var(--violet); }
+  .price-panel--alt .amt{ color:#5b4fae; }
+
+  @media (max-width:860px){
+    .price-panel{ grid-template-columns:1fr; }
+    .price-left{ border-right:none; border-bottom:1px solid var(--line-on-porcelain); padding:32px 26px; }
+    .price-right{ padding:32px 26px; }
+    .price-panel--alt .price-left{ order:0; border-left:none; border-bottom:1px solid var(--line-on-porcelain); }
+    .price-panel--alt .price-right{ order:0; }
+    .pricing-divider{ margin:24px 0; }
+  }
+
+  /* ---------- REVIEWS ---------- */
+  .reviews{ background:var(--ink-2); border-top:1px solid var(--line-on-ink); border-bottom:1px solid var(--line-on-ink); }
+  .review-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:28px; margin-bottom:44px; }
+  .review-card{
+    background:var(--ink); border:1px solid var(--line-on-ink); border-radius:6px;
+    padding:30px 28px; display:flex; flex-direction:column; gap:20px;
+  }
+  .review-tag{
+    align-self:flex-start; font-size:11.5px; letter-spacing:0.04em; color:var(--ash-dark);
+    border:1px solid var(--line-on-ink); border-radius:20px; padding:4px 11px;
+  }
+  .review-card blockquote{
+    font-family:'Fraunces',serif; font-style:italic; font-size:17px; line-height:1.5; color:var(--text-on-ink);
+  }
+  .review-stars-display{ color:var(--gold); font-size:15px; letter-spacing:2px; }
+  .review-attr{ font-size:13.5px; color:var(--ash); margin-top:auto; }
+  .review-attr b{ color:var(--text-on-ink); font-weight:600; }
+
+  .review-cta{
+    display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;
+    border-top:1px solid var(--line-on-ink); padding-top:32px;
+  }
+  .review-cta p{ font-size:15px; color:var(--ash); max-width:40ch; }
+  .review-cta h4{ font-size:17px; margin-bottom:4px; }
+
+  .review-form{
+    margin-top:32px; padding-top:32px; border-top:1px solid var(--line-on-ink);
+    max-width:560px;
+  }
+  .review-form .form-row{ margin-bottom:16px; }
+
+  .star-rating{ display:flex; flex-direction:row-reverse; justify-content:flex-end; gap:2px; border:none; margin:0; padding:0; }
+  .star-rating legend{ font-size:13px; color:var(--ash); padding:0; margin-bottom:8px; width:100%; }
+  .star-rating input{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+  .star-rating label{ font-size:26px; line-height:1; color:var(--line-on-ink); cursor:pointer; transition:color .12s ease; }
+  .star-rating input:checked ~ label,
+  .star-rating label:hover,
+  .star-rating label:hover ~ label{ color:var(--gold); }
+  .star-rating input:focus-visible + label{ outline:2px solid var(--gold); outline-offset:2px; border-radius:2px; }
+
+
+  /* ---------- TERMS ---------- */
+  .terms-note{
+    background:var(--ink-2); border:1px solid var(--line-on-ink); border-radius:6px;
+    padding:22px 26px; font-size:14px; color:var(--ash); margin-bottom:48px; max-width:74ch;
+  }
+  .terms-note b{ color:var(--text-on-ink); }
+  .term-item{ border-top:1px solid var(--line-on-ink); }
+  .term-item:last-child{ border-bottom:1px solid var(--line-on-ink); }
+  .term-q{
+    width:100%; text-align:left; background:none; border:none; color:var(--text-on-ink);
+    cursor:pointer; padding:22px 0; display:flex; justify-content:space-between; align-items:baseline; gap:20px;
+    font-family:inherit;
+  }
+  .term-q .t-num{ font-family:'Fraunces',serif; color:var(--gold); font-size:15px; flex-shrink:0; width:28px; }
+  .term-q .t-title{ font-size:16.5px; font-weight:500; flex:1; }
+  .term-q .t-chevron{ color:var(--ash-dark); transition:transform .2s ease; flex-shrink:0; }
+  .term-item.open .t-chevron{ transform:rotate(45deg); }
+  .term-a{
+    max-height:0; overflow:hidden; transition:max-height .3s ease;
+  }
+  .term-a-inner{ padding:0 0 26px 28px; color:var(--ash); font-size:14.5px; max-width:70ch; }
+  .term-a-inner p{ margin-bottom:12px; }
+  .term-a-inner p:last-child{ margin-bottom:0; }
+  .term-a-inner ul{ margin:10px 0 12px 20px; }
+  .term-a-inner li{ margin-bottom:6px; }
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer{ background:var(--ink-2); border-top:1px solid var(--line-on-ink); padding:96px 0 40px; }
+  .contact-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; }
+  .contact-grid h2{ font-size:clamp(28px,3.4vw,38px); margin-bottom:16px; }
+  .contact-grid > div:first-child p{ color:var(--ash); max-width:38ch; margin-bottom:26px; font-size:15.5px; }
+  .contact-meta{ display:flex; flex-direction:column; gap:8px; font-size:14.5px; color:var(--ash); }
+  .contact-meta a{ color:var(--text-on-ink); text-decoration:none; border-bottom:1px solid var(--line-on-ink); }
+
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
+  .field{ display:flex; flex-direction:column; gap:8px; }
+  .field.full{ grid-column:1 / -1; }
+  label{ font-size:13px; color:var(--ash); }
+  input, textarea{
+    background:var(--ink); border:1px solid var(--line-on-ink); color:var(--text-on-ink);
+    border-radius:3px; padding:12px 14px; font-family:inherit; font-size:14.5px; width:100%;
+  }
+  textarea{ resize:vertical; min-height:100px; }
+  input::placeholder, textarea::placeholder{ color:var(--ash-dark); }
+  .submit-row{ display:flex; align-items:center; gap:18px; margin-top:6px; }
+  #formNote{ font-size:13px; color:var(--ash-dark); }
+
+  @media (max-width:860px){
+    .contact-grid{ grid-template-columns:1fr; gap:40px; }
+    .form-row{ grid-template-columns:1fr; }
+  }
+
+  .foot-bottom{
+    margin-top:80px; padding-top:28px; border-top:1px solid var(--line-on-ink);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:13px; color:var(--ash-dark);
+  }
+  .foot-bottom a{ color:var(--ash-dark); text-decoration:none; }
+  .foot-bottom a:hover{ color:var(--ash); }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-row">
+    <a href="#top" class="wordmark">Prelux <em>Digital</em> Marketing</a>
+    <nav class="links" id="navLinks">
+      <a href="#included">Services</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#terms">Terms</a>
+      <a href="#contact" class="nav-cta">Start a project</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="hero-eyebrow">Social media marketing for small businesses</p>
+        <h1>
+          <span class="hero-line">Consistent advertising,</span>
+          <span class="hero-line">clear ownership,</span>
+          <span class="hero-line"><span class="accent">no fine-print surprises.</span></span>
+        </h1>
+        <p class="lede">Prelux Digital Marketing plans, writes, and designs your social ads — with a scope, a price, and a set of terms you can actually read in one sitting.</p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn-primary">See the package</a>
+          <a href="#terms" class="btn-ghost">Read the agreement</a>
+        </div>
+      </div>
+      <div class="calendar-card">
+        <div class="cc-head">
+          <span class="cc-title">Example calendar</span>
+          <span class="cc-sub">12 ads scheduled</span>
+        </div>
+        <div class="cc-grid">
+          <div class="cc-cell"></div><div class="cc-cell post"></div><div class="cc-cell"></div><div class="cc-cell"></div><div class="cc-cell post2"></div><div class="cc-cell"></div><div class="cc-cell"></div>
+          <div class="cc-cell"></div><div class="cc-cell"></div><div class="cc-cell post"></div><div class="cc-cell"></div><div class="cc-cell"></div><div class="cc-cell post2"></div><div class="cc-cell"></div>
+          <div class="cc-cell post"></div><div class="cc-cell"></div><div class="cc-cell"></div><div class="cc-cell post2"></div><div class="cc-cell"></div><div class="cc-cell"></div><div class="cc-cell post"></div>
+          <div class="cc-cell"></div><div class="cc-cell post2"></div><div class="cc-cell"></div><div class="cc-cell"></div><div class="cc-cell post"></div><div class="cc-cell"></div><div class="cc-cell"></div>
+        </div>
+        <div class="cc-foot">
+          <span><i class="cc-dot" style="background:var(--gold)"></i> Ads &amp; captions</span>
+          <span><i class="cc-dot" style="background:var(--violet)"></i> Graphics</span>
+        </div>
+        <p class="cc-caption">For illustration only — every client gets their own calendar, built around their own business and schedule.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUDED -->
+  <section id="included" class="on-porcelain">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">What's included</p>
+        <h2>One package. Everything you need to show up online, on schedule.</h2>
+        <p>The standard package below covers most small businesses. Anything different — more volume, more platforms, a different cadence — gets agreed in writing before it starts.</p>
+      </div>
+
+      <div class="included-panel">
+        <div class="included-list">
+          <ul>
+            <li><span class="num">01</span><span class="desc"><b>Social media ads</b><span>Up to 12 per month, planned around your business.</span></span></li>
+            <li><span class="num">02</span><span class="desc"><b>Captions &amp; copy</b><span>Written for each ad, in a voice that sounds like you.</span></span></li>
+            <li><span class="num">03</span><span class="desc"><b>Promotional graphics</b><span>Up to 4 designed graphics per month.</span></span></li>
+            <li><span class="num">04</span><span class="desc"><b>Advertising strategy</b><span>A basic strategy behind the ads, not just a stream of advertisements.</span></span></li>
+            <li><span class="num">05</span><span class="desc"><b>Revisions</b><span>Reasonable rounds of revision on the work, described below.</span></span></li>
+          </ul>
+        </div>
+        <div class="included-stats">
+          <div class="stat-row"><span class="big">12</span><span class="lbl">ads scheduled for you every month</span></div>
+          <div class="stat-row"><span class="big">4</span><span class="lbl">promotional graphics designed each month</span></div>
+          <div class="stat-row"><span class="big">2</span><span class="lbl">revision rounds included per advertisement</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">How a month runs</p>
+        <h2>The same four steps, every month.</h2>
+        <p>No surprises about what happens next — the cycle is the same whether it's your first month or your twelfth.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-track">
+          <div class="t-step"><h3>Plan</h3><p>We map out the month's ads around your business and what's coming up.</p></div>
+          <div class="t-step"><h3>Create</h3><p>Captions, copy, and graphics get drafted against that plan.</p></div>
+          <div class="t-step"><h3>Review</h3><p>You review anything that needs sign-off before it goes live.</p></div>
+          <div class="t-step"><h3>Launch</h3><p>Approved ads go live on schedule, and the next month begins.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HONESTY -->
+  <section class="honesty">
+    <div class="wrap">
+      <blockquote>&ldquo;We won't promise you a follower count. We will promise you ads that go out, on time, every month.&rdquo;</blockquote>
+      <div class="honesty-list">
+        <div class="h-item">
+          <h4>No guaranteed results</h4>
+          <p>We don't promise a specific number of followers, views, leads, or sales. Social performance depends on platform algorithms, competition, and audience behavior — factors outside anyone's full control.</p>
+        </div>
+        <div class="h-item">
+          <h4>You review what matters</h4>
+          <p>Anything requiring your approval — prices, promotions, hours, product details — gets sent to you before it goes live. You're responsible for checking the facts before they go out under your name.</p>
+        </div>
+        <div class="h-item">
+          <h4>Your advertisements stay yours</h4>
+          <p>Once you've paid in full, the final advertisements made specifically for you are yours to use. Our own templates, processes, and pre-existing tools stay ours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="on-porcelain">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Pricing</p>
+        <h2>Two ways to work with us.</h2>
+        <p>Stay on the ongoing monthly plan, or book a single one-time batch of ads with no subscription attached.</p>
+      </div>
+      <div class="price-panel">
+        <div class="price-left">
+          <h3>Standard social media package</h3>
+          <p>Billed monthly, due before each service period begins. A different price only applies if it's agreed in writing ahead of time.</p>
+          <ul>
+            <li>Up to 12 ads and captions per month</li>
+            <li>Up to 4 promotional graphics per month</li>
+            <li>Ongoing advertising strategy</li>
+            <li>Two revision rounds per advertisement</li>
+            <li>Cancel with 7 days' notice before your next billing date</li>
+          </ul>
+        </div>
+        <div class="price-right">
+          <div class="price-tag"><span class="amt">$200</span><span class="per">/ month</span></div>
+          <p class="price-fine">Completed work is non-refundable. If a prepaid service can't be delivered, the unused portion is refunded. Full terms below.</p>
+          <a href="#contact" class="btn-primary">Start a project</a>
+        </div>
+      </div>
+
+      <div class="pricing-divider"><span>or, with no subscription</span></div>
+
+      <div class="price-panel price-panel--alt">
+        <div class="price-left">
+          <h3>One-time ad package</h3>
+          <p>For a single push — a launch, an event, a seasonal campaign — with nothing ongoing and nothing to cancel later.</p>
+          <ul>
+            <li>6 ads and captions — one batch, not a monthly total</li>
+            <li>2 promotional graphics</li>
+            <li>One review &amp; revision round</li>
+            <li>Delivered within 10 business days of your approval</li>
+            <li>No recurring billing or auto-renewal</li>
+          </ul>
+        </div>
+        <div class="price-right">
+          <div class="price-tag"><span class="was">$300</span><span class="amt">$250</span><span class="per">one-time</span></div>
+          <span class="save-badge">Save $50</span>
+          <p class="price-fine">Paid in full before work begins. Still costs more than a single month of the subscription, since it's a standalone engagement with no ongoing relationship behind it.</p>
+          <a href="#contact" class="btn-primary">Book the one-time package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Reviews</p>
+        <p>No reviews yet — this section fills in as real clients leave feedback.</p>
+      </div>
+
+      <div class="review-cta">
+        <div>
+          <h4>Worked with us?</h4>
+          <p>We'd love to hear how it went — good or bad.</p>
+        </div>
+        <button type="button" id="toggleReviewForm" class="btn-primary" aria-expanded="false" aria-controls="reviewForm">Write a review</button>
+      </div>
+
+      <form id="reviewForm" class="review-form" hidden>
+        <div class="form-row">
+          <div class="field"><label for="revName">Your name</label><input id="revName" name="revName" type="text" placeholder="Full name" required></div>
+          <div class="field"><label for="revBusiness">Your business</label><input id="revBusiness" name="revBusiness" type="text" placeholder="Business name (optional)"></div>
+        </div>
+        <div class="form-row">
+          <div class="field full">
+            <fieldset class="star-rating">
+              <legend>Your rating</legend>
+              <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">★</label>
+              <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
+              <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+              <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
+              <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field full"><label for="revText">Your review</label><textarea id="revText" name="revText" placeholder="What was it like working with Prelux Digital Marketing?" required></textarea></div>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Send review</button>
+          <span id="reviewFormNote"></span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- TERMS -->
+  <section id="terms">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-kicker">Terms &amp; conditions</p>
+        <h2>The full agreement, in plain sections.</h2>
+        <p>This is the same Social Media Services Agreement every client signs before work begins. Tap a section to read it.</p>
+      </div>
+
+      <div class="terms-note">
+        <b>Note:</b> this page summarizes the agreement for reference. The signed version — with your business details, package, and effective date filled in — is what governs the working relationship, and takes precedence if anything here reads differently.
+      </div>
+
+      <div class="terms-list" id="termsList">
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">01</span><span class="t-title">Services</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>Prelux Digital Marketing provides social media marketing and advertising services according to the package the client selects. Unless otherwise agreed in writing, the standard package may include:</p>
+            <ul>
+              <li>Up to 12 social media ads per month</li>
+              <li>Written captions and basic copywriting</li>
+              <li>Up to 4 promotional graphics per month</li>
+              <li>Basic social media / advertising strategy</li>
+              <li>Reasonable revisions, as described in Section 5</li>
+            </ul>
+            <p>Any services outside the agreed package may require an additional fee.</p>
+            <p>As an alternative to the monthly package above, Prelux Digital Marketing also offers a one-time ad package: a single, non-recurring batch of ads with no ongoing subscription. Its scope and deliverables are described on the pricing page and confirmed in writing before work begins; its payment terms are set out in Section 2 (Payment).</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">02</span><span class="t-title">Payment</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>The client agrees to pay $200 per month, unless a different price is agreed to in writing. Payment is due before services begin for each monthly service period.</p>
+            <p>The one-time ad package is priced separately from the monthly package and is paid in full before work begins. It is not billed monthly and does not renew or recur.</p>
+            <p>If payment is late, Prelux Digital Marketing may pause work until the outstanding balance is paid.</p>
+            <p>Payments already earned for completed work are non-refundable. If Prelux Digital Marketing is unable to provide prepaid services, any amount attributable to services not provided will be refunded.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">03</span><span class="t-title">Client responsibilities</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>The client agrees to provide the information, photographs, videos, logos, brand materials, approvals, and account access reasonably necessary to perform the services.</p>
+            <p>The client represents that it has permission to use any materials it supplies. Delays caused by missing materials, access, information, or approvals may delay advertisement delivery.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">04</span><span class="t-title">Advertisement approval</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>When client approval is required, advertisements are submitted for review before publication. The client is responsible for reviewing each advertisement for factual accuracy — prices, promotions, business hours, product information, and other business-specific claims.</p>
+            <p>Once the client approves an advertisement, the client accepts responsibility for the accuracy of the information it approved.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">05</span><span class="t-title">Revisions</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>The monthly package includes up to two reasonable revision rounds per advertisement. Major changes in direction, repeated revisions, or work outside the original scope may require an additional fee, disclosed and agreed upon before that work begins.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">06</span><span class="t-title">Social media account access</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>If the client provides login credentials, administrator access, or other account permissions, that access is used only as reasonably necessary to provide the agreed services.</p>
+            <p>Reasonable steps are taken to protect account information, but Prelux Digital Marketing is not responsible for platform outages, hacking, account restrictions, suspensions, or other events outside its reasonable control. The client may revoke access after the agreement ends.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">07</span><span class="t-title">No guarantee of results</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>Services are provided professionally and in good faith, but no specific number of followers, views, leads, customers, sales, revenue, engagement, or other business results is guaranteed.</p>
+            <p>Social media performance depends on numerous factors outside Prelux Digital Marketing's control, including platform algorithms, competition, market conditions, audience behavior, and the client's products or services.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">08</span><span class="t-title">Ownership</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>After full payment, the client may use the final advertisements specifically created and delivered for them under this agreement.</p>
+            <p>Prelux Digital Marketing retains ownership of its pre-existing materials, processes, templates, methods, and other intellectual property not created exclusively for the client. Unless the client requests otherwise in writing, completed public-facing work may be displayed in Prelux Digital Marketing's portfolio or promotional materials.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">09</span><span class="t-title">Third-party materials</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>Any stock photographs, fonts, music, software, templates, platform features, or other third-party materials remain subject to their respective licenses and terms. The client does not receive ownership of third-party intellectual property merely because it appears in delivered advertisements.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">10</span><span class="t-title">Confidentiality</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>Both parties agree to use reasonable care to protect confidential business information received from the other party, and not disclose it unnecessarily to third parties. This does not apply to information that is already public or that must legally be disclosed.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">11</span><span class="t-title">Cancellation</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>Either party may cancel by providing at least 7 days' written notice before the next monthly billing date. Cancellation does not eliminate payment obligations for work already completed or authorized. Unless otherwise agreed, services continue through the portion of the service period already paid for.</p>
+            <p>This notice period applies to the ongoing monthly package. The one-time ad package is a single, non-recurring engagement with no monthly billing date to cancel before — once paid for, it is governed by the non-refundable-work policy in Section 2 (Payment) rather than this notice period.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">12</span><span class="t-title">Termination</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>Prelux Digital Marketing may immediately suspend or terminate services if the client:</p>
+            <ul>
+              <li>Fails to make required payments;</li>
+              <li>Requests unlawful, fraudulent, deceptive, or infringing advertisements;</li>
+              <li>Misuses Prelux Digital Marketing's work or services; or</li>
+              <li>Materially violates the agreement.</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">13</span><span class="t-title">Independent contractor</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>Prelux Digital Marketing is an independent service provider. Nothing in the agreement creates an employer-employee relationship, partnership, joint venture, or agency relationship between the parties.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">14</span><span class="t-title">Limitation of liability</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>To the extent permitted by law, Prelux Digital Marketing is not liable for indirect, incidental, special, or consequential losses arising from platform changes, outages, account restrictions, loss of expected profits, or circumstances outside its reasonable control.</p>
+            <p>Total liability arising from the agreement will not exceed the amount the client paid for the service period giving rise to the claim.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">15</span><span class="t-title">Governing law</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>This agreement is governed by the laws of the State of New Jersey, unless applicable law requires otherwise.</p>
+          </div></div>
+        </div>
+
+        <div class="term-item">
+          <button class="term-q"><span class="t-num">16</span><span class="t-title">Entire agreement</span><span class="t-chevron">+</span></button>
+          <div class="term-a"><div class="term-a-inner">
+            <p>This agreement, together with any written package, proposal, or scope of work incorporated into it, represents the full agreement between Prelux Digital Marketing and the client regarding these services. Changes must be agreed to in writing by both parties.</p>
+          </div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CONTACT / FOOTER -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <h2>Let's plan next month.</h2>
+        <p>Tell us about your business and we'll follow up with a package recommendation and a proposed effective date.</p>
+        <div class="contact-meta">
+          <span>Prelux Digital Marketing</span>
+          <a href="mailto:preluxmanagement@gmail.com" id="contactEmail" data-email="preluxmanagement@gmail.com">preluxmanagement@gmail.com</a>
+          <span>Replies within 1 business day</span>
+        </div>
+      </div>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="field"><label for="bizName">Business name</label><input id="bizName" name="bizName" type="text" placeholder="Your business" required></div>
+          <div class="field"><label for="repName">Your name</label><input id="repName" name="repName" type="text" placeholder="Full name" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@business.com" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(optional)"></div>
+        </div>
+        <div class="form-row">
+          <div class="field full"><label for="message">What do you need help with?</label><textarea id="message" name="message" placeholder="A bit about your business and what you're looking for"></textarea></div>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Send inquiry</button>
+          <span id="formNote"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Prelux Digital Marketing. All rights reserved.</span>
+      <span><a href="#terms">Terms &amp; conditions</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // mobile nav
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', false);
+  }));
+
+  // terms accordion
+  document.querySelectorAll('.term-item').forEach(item => {
+    const q = item.querySelector('.term-q');
+    const a = item.querySelector('.term-a');
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.term-item.open').forEach(other => {
+        if (other !== item) {
+          other.classList.remove('open');
+          other.querySelector('.term-a').style.maxHeight = null;
+        }
+      });
+      item.classList.toggle('open', !isOpen);
+      a.style.maxHeight = !isOpen ? a.scrollHeight + 'px' : null;
+    });
+  });
+
+  // contact form — builds a pre-filled email since this static page has no backend to send to
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const note = document.getElementById('formNote');
+
+    const bizName = document.getElementById('bizName').value.trim();
+    const repName = document.getElementById('repName').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!bizName || !repName || !email) {
+      note.textContent = 'Please fill in your business name, your name, and your email.';
+      return;
+    }
+
+    const to = document.getElementById('contactEmail').dataset.email;
+    if (!to) {
+      note.textContent = "This form isn't connected to an inbox yet — check back soon, or reach out directly once contact details are added.";
+      return;
+    }
+    const subject = `New inquiry from ${bizName}`;
+    const bodyLines = [
+      `Business name: ${bizName}`,
+      `Contact name: ${repName}`,
+      `Email: ${email}`,
+      phone ? `Phone: ${phone}` : null,
+      '',
+      message || '(No additional details provided.)'
+    ].filter(line => line !== null).join('\n');
+
+    const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines)}`;
+    window.location.href = mailtoLink;
+    note.textContent = 'Opening your email app to send this — if nothing happens, email us directly instead.';
+  });  // review form — toggle + mailto submission, same pattern as the contact form
+  const toggleBtn = document.getElementById('toggleReviewForm');
+  const reviewForm = document.getElementById('reviewForm');
+  toggleBtn.addEventListener('click', () => {
+    const nowHidden = !reviewForm.hidden;
+    reviewForm.hidden = nowHidden;
+    toggleBtn.setAttribute('aria-expanded', String(!nowHidden));
+    toggleBtn.textContent = nowHidden ? 'Write a review' : 'Hide the form';
+    if (!nowHidden) reviewForm.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  reviewForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const note = document.getElementById('reviewFormNote');
+
+    const name = document.getElementById('revName').value.trim();
+    const business = document.getElementById('revBusiness').value.trim();
+    const text = document.getElementById('revText').value.trim();
+    const ratingInput = reviewForm.querySelector('input[name="rating"]:checked');
+    const rating = ratingInput ? ratingInput.value : null;
+
+    if (!name || !text) {
+      note.textContent = 'Please add your name and a review before sending.';
+      return;
+    }
+
+    const to = document.getElementById('contactEmail').dataset.email;
+    if (!to) {
+      note.textContent = "This form isn't connected to an inbox yet — check back soon.";
+      return;
+    }
+    const subject = `New review from ${name}`;
+    const bodyLines = [
+      `Name: ${name}`,
+      business ? `Business: ${business}` : null,
+      rating ? `Rating: ${rating}/5` : 'Rating: (not selected)',
+      '',
+      text
+    ].filter(line => line !== null).join('\n');
+
+    window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines)}`;
+    note.textContent = 'Opening your email app to send this — thank you! We\'ll add it to the site once we receive it.';
+  });
+</script>
+
+</body>
+</html>
